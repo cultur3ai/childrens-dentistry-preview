@@ -61,6 +61,28 @@
     };
   }
 
+  /* Shown when the page is served from a static preview host: the intake agent is
+     a live service, not part of the static copy. No fake confirmation. */
+  function renderPreviewNote() {
+    if (!resultPanel) return;
+    resultPanel.innerHTML =
+      '<div class="result-card" role="status">' +
+        '<p class="result-kicker">Preview page</p>' +
+        '<h2 class="result-headline">The booking agent is not connected on this preview.</h2>' +
+        '<p class="result-when">On the live site this form reads what a parent writes, holds a slot on the ' +
+          'Monday&ndash;Thursday schedule, hands your front desk a one-line summary &mdash; and sends anything ' +
+          'urgent (swelling, a knocked-out tooth) straight to a phone call instead of a booking.</p>' +
+        '<p class="result-call"><a href="tel:+17724033533">Call (772) 403-3533</a> to see it run.</p>' +
+        '<ul class="result-steps">' +
+          '<li>Or call the practice as usual: <a href="tel:+17722831230">(772) 283-1230</a>.</li>' +
+        '</ul>' +
+      '</div>';
+    resultPanel.hidden = false;
+    form.hidden = true;
+    setStatus('', '');
+    resultPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -124,11 +146,17 @@
         renderConfirmation(res.body);
         return;
       }
+      /* A static preview host has no /api/intake. Say so plainly instead of
+         showing a broken-form error — and never pretend a booking was made. */
+      if (res.status === 404 || res.status === 405 || res.status === 0) {
+        renderPreviewNote();
+        return;
+      }
       setStatus(res.body && res.body.message
         ? res.body.message
         : 'Something went wrong on our end. Please call (772) 283-1230.', 'error');
     }).catch(function () {
-      setStatus('We could not reach the booking service. Please call (772) 283-1230.', 'error');
+      renderPreviewNote();
     }).then(function () {
       if (btn) { btn.disabled = false; btn.textContent = btn.dataset.label || 'Request appointment'; }
     });
