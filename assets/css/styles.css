@@ -2163,24 +2163,41 @@ html { scroll-behavior: auto; }
 html { scroll-padding-top: 5.5rem; }   /* sticky header clearance for anchors */
 
 
+
+
 /* ============================================================
-   HEADER-MASCOT — the dancing tooth, next to the social badges.
-   Decorative: aria-hidden, alt="", and it never takes a pointer event.
-   The bob comes from the mascot rule already in the motion layer.
+   HEADER-MASCOT — the dancing tooth, free-standing UNDER the social icons.
+   No circle, no badge: it hangs below the icon row and dances. Decorative only.
    ============================================================ */
-.header-mascot { display: none; }
+.header-socials { display: none; }
 @media (min-width: 1080px) {
-  /* same circular weight as the badges next to it, so the row reads as one group */
+  .header-socials { display: block; position: relative; margin-right: .4rem; margin-left: auto; }
+  .header-socials .socials--header { display: flex; }
+
   .header-mascot {
-    display: grid; place-items: center;
-    width: 46px; height: 46px; margin-right: .55rem; pointer-events: none;
-    flex: none; list-style: none; border-radius: 50%;
-    background: #fff; box-shadow: 0 2px 6px rgba(34, 48, 59, .14);
-    border: 1px solid rgba(34, 48, 59, .08);
+    position: absolute; left: 50%; top: calc(100% + 9px);
+    width: 44px; height: 44px; margin-left: -22px;
+    pointer-events: none; z-index: 3;
+    filter: drop-shadow(0 4px 8px rgba(34, 48, 59, .18));
   }
-  .header-mascot img { width: 38px; height: 38px; display: block; }
+  .header-mascot img {
+    width: 44px; height: 44px; display: block;
+    animation: mascot-dance 2.4s cubic-bezier(.45, .05, .55, .95) infinite;
+    transform-origin: 50% 92%;
+  }
 }
-/* slightly smaller once the socials appear but the bar is tight */
-@media (min-width: 1080px) and (max-width: 1180px) {
-  .header-mascot, .header-mascot img { width: 38px; height: 38px; }
+
+/* a real dance: bounce, lean, squash, and a cheeky spin */
+@keyframes mascot-dance {
+  0%   { transform: translateY(0)     rotate(0deg)    scale(1, 1); }
+  15%  { transform: translateY(-6px)  rotate(-9deg)   scale(1.02, .98); }
+  30%  { transform: translateY(0)     rotate(0deg)    scale(.97, 1.03); }
+  45%  { transform: translateY(-4px)  rotate(8deg)    scale(1.02, .98); }
+  60%  { transform: translateY(0)     rotate(0deg)    scale(.98, 1.02); }
+  75%  { transform: translateY(-7px)  rotate(-4deg)   scale(1.02, .98); }
+  100% { transform: translateY(0)     rotate(0deg)    scale(1, 1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-mascot img { animation: none !important; }
 }
