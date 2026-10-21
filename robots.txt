@@ -1,0 +1,64 @@
+# Children's Dentistry of Stuart
+# Explicitly open to search engines AND to answer-engine crawlers.
+# A blocked crawler is removed from play no matter how good the page is.
+
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /seo/
+
+# --- Search engines -------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Slurp
+Allow: /
+
+# --- Answer engines / LLM crawlers ---------------------------------------
+# Google AI Overviews + Gemini training/grounding
+User-agent: Google-Extended
+Allow: /
+# OpenAI: retrieval for ChatGPT Search, live browsing, model training
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+# Apple Intelligence / Siri (Bing-backed) + Applebot
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+# xAI / Grok
+User-agent: xAI-Bot
+Allow: /
+User-agent: GrokBot
+Allow: /
+# Common Crawl (feeds many open models)
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://childrensdentistryofstuart.com/sitemap.xml
+# LLM-readable summary of this site:
+# https://childrensdentistryofstuart.com/llms.txt

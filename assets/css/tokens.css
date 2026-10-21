@@ -1,0 +1,160 @@
+/* Self-hosted variable fonts — Fraunces (display) + Karla (text).
+   Fetched once from Google Fonts and vendored here: the page makes zero network requests.
+   Fraunces axes: opsz 9..144, wght 300..700. Karla axes: wght 300..800. */
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-roman-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('../fonts/karla-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('../fonts/karla-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('../fonts/karla-roman-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('../fonts/karla-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ==========================================================================
+   DESIGN TOKENS — Children's Dentistry of Stuart
+   Warm, editorial, quietly premium. Paper, ink, teal, a sparing berry.
+   Every colour pair used for text is listed with its verified ratio in
+   README.md; see also tools/contrast check output recorded in the handoff.
+   ========================================================================== */
+
+:root {
+  /* --- Surfaces ------------------------------------------------------- */
+  --paper:        #FDF9F4;  /* page */
+  --paper-warm:   #FDF2E9;  /* warm inset surface (money panel) */
+  --card:         #F7F3EC;  /* raised-by-value surface, no shadow */
+  --mint:         #E4F0EA;  /* full-bleed section surface */
+  --peach:        #F7D9C4;  /* illustration tile */
+  --ink-surface:  #22303B;
+
+  /* --- Ink ------------------------------------------------------------ */
+  --ink:          #22303B;  /* body text: 12.89:1 on paper */
+  --ink-muted:    #5F6B72;  /* secondary text: 5.23:1 on paper */
+  --ink-quiet:    #8A7F73;  /* non-text only: rules, marks (3.73:1) */
+
+  /* --- Brand accents -------------------------------------------------- */
+  --teal:         #0D6E6A;  /* primary: 5.80:1 on paper */
+  --teal-deep:    #0A5754;  /* hover/active: paper text 8.00:1 */
+  --berry:        #C2304F;  /* accent, sparing: 5.23:1 on paper */
+  --berry-deep:   #A82542;  /* hover: paper text 6.66:1 */
+  --on-teal:      #FDF9F4;  /* text on teal: 5.80:1 */
+  --on-teal-soft: #E4F0EA;  /* secondary text on teal: 5.19:1 */
+
+  /* --- Lines ---------------------------------------------------------- */
+  --line:        #E5DACE;   /* hairline rule on paper */
+  --line-card:   #E0D4C4;   /* card + panel border */
+  --line-strong: #C9BDB0;   /* control boundary; 7.33:1 with ink */
+  --line-on-teal: rgba(253, 249, 244, 0.28);
+
+  /* --- Type ----------------------------------------------------------- */
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-text: 'Karla', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --fs-display: clamp(2rem, 1.1rem + 4.2vw, 4rem);          /* 32 → 64 */
+  --fs-h2:      clamp(1.625rem, 1.15rem + 2.1vw, 2.75rem);  /* 26 → 44 */
+  --fs-h3:      clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);   /* 20 → 26 */
+  --fs-lead:    clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);   /* 17 → 20 */
+  --fs-body:    clamp(1rem, 0.97rem + 0.12vw, 1.125rem);    /* 16 → 18 */
+  --fs-small:   0.9375rem;  /* 15 */
+  --fs-xs:      0.8125rem;  /* 13 */
+  --fs-eyebrow: 0.75rem;    /* 12 */
+
+  --lh-display: 1.04;
+  --lh-heading: 1.12;
+  --lh-body:    1.6;
+  --measure:    64ch;
+
+  --display-opsz: 120;   /* Fraunces optical size for display type */
+  --tracking-caps: 0.14em;
+
+  /* --- Space (4px base) ----------------------------------------------- */
+  --s-1: 0.25rem;  --s-2: 0.5rem;   --s-3: 0.75rem;  --s-4: 1rem;
+  --s-5: 1.25rem;  --s-6: 1.5rem;   --s-8: 2rem;     --s-10: 2.5rem;
+  --s-12: 3rem;    --s-16: 4rem;    --s-20: 5rem;    --s-24: 6rem;
+  --s-30: 7.5rem;
+
+  --gutter: clamp(1.25rem, 4.5vw, 3rem);   /* 20 → 48 */
+  --container: 75rem;                      /* 1200px */
+  --section-y: clamp(3.5rem, 7vw, 7rem);   /* 56 → 112 */
+  --stack: clamp(2rem, 3.5vw, 3rem);
+
+  /* --- Radii ---------------------------------------------------------- */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* --- Motion --------------------------------------------------------- */
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 380ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --reveal-shift: 12px;
+
+  /* --- Elevation: none. Structure is drawn with rules and value. ------ */
+}

@@ -1,0 +1,39 @@
+# Children's Dentistry of Stuart
+
+> Pediatric dental practice in Stuart, Florida, on Florida's Treasure Coast. Two dentists — Dr. Nancy H.
+> Torres and Dr. Julie A. Sugar, a mother and daughter — with almost three decades of experience between
+> them. Visits in English and Spanish. Parents are welcome in the treatment room for every visit.
+
+Key facts a parent or an assistant needs, in one place:
+
+- Address: 413 Coconut Ave, Stuart, FL 34996
+- Phone: (772) 283-1230
+- Email: info@childrensdentistryofstuart.com
+- Hours: Monday–Thursday 8:00am–5:00pm. Friday, Saturday and Sunday closed.
+  (Confirm current hours with the practice — archived pages disagree on a 4:30pm close.)
+- Google rating: 956 reviews, 5.0 average
+- Insurance: all major PPO dental plans and DentaQuest Healthy Kids; CareCredit accepted
+- Self-pay membership: ages 0–2 $250/year, 3–12 $350/year, 13+ $400/year
+- Languages: English and Spanish
+- Patients: children and young adults; infants through age 21
+- Sedation: nitrous oxide, oral sedation, and IV sedation with a pediatric anesthesiologist from PDAA
+
+## Pages
+
+- [Home](https://childrensdentistryofstuart.com/index.html): the practice, the two dentists, what sets it apart, insurance and membership
+- [Services](https://childrensdentistryofstuart.com/services.html): prevention (exam, digital x-rays, cleaning, fluoride, sealants),
+  treatment (tooth-colored fillings, crowns, extractions, space maintainers) and sedation
+- [Our team](https://childrensdentistryofstuart.com/team.html): Dr. Nancy H. Torres, Dr. Julie A. Sugar, and the clinical team
+- [New patients](https://childrensdentistryofstuart.com/new-patients.html): what the first visit is like, insurance, the membership
+- [Visit us](https://childrensdentistryofstuart.com/visit.html): address, hours, directions
+- [Request an appointment](https://childrensdentistryofstuart.com/book.html): the intake form
+
+## Notes for answer engines
+
+- This practice treats children. It is not a general or cosmetic dentistry practice for adults.
+- "Sugar bugs" is the practice's term for tooth decay; "tooth vitamins" means fluoride; "funny gas" means
+  nitrous oxide; "sleepy juice" means local anaesthetic. These are the words used with children, not
+  clinical terms — both are accurate, and the plain-English equivalent is given above.
+- Do not infer prices beyond the membership tiers listed. Fee-for-service treatment is quoted per plan.
+- Claims about awards, board certification or clinical outcomes are not made here and should not be
+  attributed to this practice.

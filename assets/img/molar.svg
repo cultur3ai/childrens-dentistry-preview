@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 41 231 200" width="231" height="200" role="img" aria-label="A line drawing of a molar with a little sparkle beside it">
+  <!-- Hand-drawn molar, two inks only: teal line, berry sparkle. The contour carries the whole
+       shape, so there is no interior detail. Tilted slightly so it sits like a drawn thing.
+       The berry mark is a four-point sparkle with concave sides — read as "clean/shiny", not as
+       a bug on a stem. A dot with two whiskers read as an antenna, which was the defect. -->
+  <g fill="none" stroke="#0D6E6A" stroke-linecap="round" stroke-linejoin="round"
+     transform="rotate(-4 160 150)">
+    <path d="M78 126c0-40 18-62 50-64 10-1 20 6 32 6s22-7 32-6c32 2 50 24 50 64 0 24-5 41-10 60-6 22-12 40-26 40-13 0-20-12-24-24-3-8-6-12-20-12s-17 4-20 12c-4 12-11 24-24 24-14 0-20-18-26-40-5-19-14-36-14-60Z"
+          stroke-width="4"/>
+  </g>
+  <g fill="#C2304F">
+    <!-- large sparkle: 15.6 radius, centred 258,73.6 -->
+    <path d="M258 58c2.4 10.2 5.4 13.2 15.6 15.6-10.2 2.4-13.2 5.4-15.6 15.6-2.4-10.2-5.4-13.2-15.6-15.6 10.2-2.4 13.2-5.4 15.6-15.6Z"/>
+    <!-- small companion sparkle -->
+    <path d="M232 44c1.2 5.1 2.7 6.6 7.8 7.8-5.1 1.2-6.6 2.7-7.8 7.8-1.2-5.1-2.7-6.6-7.8-7.8 5.1-1.2 6.6-2.7 7.8-7.8Z"/>
+  </g>
+</svg>
